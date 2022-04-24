@@ -7,7 +7,7 @@ var playerMoney = 10;
 console.log(playerName, playerAttack, playerHealth);
 
 var enemyName = "Roborto";
-var enemyHealth = 40;
+var enemyHealth = 50;
 var enemyAttack = 12;
 
 var fight = function() {
@@ -59,14 +59,12 @@ var fight = function() {
         else {
         fight();
     }
+    // if player did not choose 1 or 2 in prompt
+} else {
+    window.alert("You need to pick a valid option. Try again!");
 }
+};
     
 
-   
-
-   
-
-   
-
+// run fight function to start game
 fight();
-}
